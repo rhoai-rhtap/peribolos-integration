@@ -6,6 +6,11 @@ on:
       - 'main'
     paths:
       - "config/rhoai-rhtap/org.yaml"
+permissions:
+  packages: write
+  contents: read
+  id-token: write
+
 jobs:
   setup:
     runs-on: ubuntu-latest
@@ -25,7 +30,6 @@ jobs:
       image: gcr.io/k8s-prow/peribolos
     steps:
       - uses: actions/checkout@v3
-
       - name: Apply organization membership
         run: |
           echo ${{ needs.setup.outputs.token }} > /.github_token.txt
