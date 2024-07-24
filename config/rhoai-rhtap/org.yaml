@@ -5,7 +5,7 @@ orgs:
     - MohammadiIram
     - riprasad
     default_repository_permission: read
-    description: "Organization for Open Data Hub community"
+    description: "Organization for RHOAI RHTAP Org"
     has_organization_projects: true
     has_repository_projects: true
     members:
