@@ -1,0 +1,15 @@
+orgs:
+  rhoai-rhtap:
+    admins:
+    - dchourasia
+    - MohammadiIram
+    - riprasad
+    default_repository_permission: read
+    description: "Organization for Open Data Hub community"
+    has_organization_projects: true
+    has_repository_projects: true
+    members:
+    - aloganat
+    - moulalis
+    members_can_create_repositories: false
+    name: rhoai-rhtap
