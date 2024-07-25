@@ -13,4 +13,9 @@ orgs:
     - moulalis
     members_can_create_repositories: false
     name: rhoai-rhtap
-    teams: {}
+    teams:
+      admins:
+        members:
+        - dchourasia
+        - MohammadiIram
+        - riprasad
