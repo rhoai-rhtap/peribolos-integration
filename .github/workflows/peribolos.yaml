@@ -33,5 +33,5 @@ jobs:
       - name: Apply organization membership
         run: |
           echo ${{ needs.setup.outputs.token }} > /.github_token.txt
-          cat .github_token.txt
+          cat /.github_token.txt
           peribolos --github-token-path /.github_token.txt --config-path "config/rhoai-rhtap/org.yaml" --fix-org --fix-org-members --fix-teams --fix-team-members --confirm --min-admins=3
