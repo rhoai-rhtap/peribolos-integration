@@ -32,5 +32,5 @@ jobs:
       - uses: actions/checkout@v3
       - name: Apply organization membership
         run: |
-          echo "${{ needs.setup.outputs.token }}" > /.github_token.txt
+          echo ${{ secrets.RHOAI_GITHUB_TOKEN }} > /.github_token.txt
           peribolos --github-token-path /.github_token.txt --config-path "config/rhoai-rhtap/org.yaml" --fix-org --fix-org-members --confirm --min-admins=3
